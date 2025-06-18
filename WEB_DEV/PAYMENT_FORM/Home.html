@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COURSE PAYMENT FORM| THE LEGAL PEEPAL</title>
+</head>
+<body>
+ <div class="form-container">
+        <h1>THE LEGAL PEEPAL</h1>
+        <hr>
+        <h2>Course Payment Form</h2>
+        <hr>
+    <form><!--Label tag good for screen Readers-->
+        <label for="firstname">First Name: </label>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter your First Name">
+        <br><!--For nextline-->
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name">
+        <br>
+       <fieldset>
+        <legend>GENDER</legend>
+      <label for="male">MALE</label>
+      <input type="radio" id="male" name="gender">
+      <br>
+      <label for="female">FEMALE</label>
+      <input type="radio" id="female" name="gender" >
+       </fieldset><!--IF different value of  "name" then both male, female  were being selected becausse both are gender but with different id's -->
+       <br>
+       <label for="email" >E-MAIL ID: </label>
+       <input type="email" id="email" name="email" placeholder="pant.rudransh@gmail.com">
+       <br>
+         <label for="address" >ADDRESS: </label>
+       <input type="text" id="" name="address" placeholder="Enter your Address"><!--HTML dont support address as a input type-->
+       <hr>
+       <h3>COURSE INFORMATION</h3>
+       COURSE NAME: <input type="text" id="coursename" name="coursename" placeholder="Enter your course name" >
+       <br>
+       COURSE ID: <input type="number" id="courseid" name="courseid" placeholder="Enter your course id" >
+       <br>
+       <h4>PRICE: $1000</h4>
+       <label for="paymentType">PAYMENT TYPE:</label>
+       <select id="paymentType" name="paymentType"><!--tT do this in situation like this with same letters-->
+             <option value="" disabled selected>Select a payment method</option><!--disabled selected se first view mein original values nahin dikhegi meri pasand ka text dikhega-->
+          <option value="upi">UPI</option>
+          <option value="netbanking">NETBANKING</option>
+          <option value="debit">DEBIT</option>
+          <option value="credit">CREDIT</option>
+       </select>
+       <br>
+       Click here to proceed to Payment-----   <input type="submit">
+    </form>
+
+    
+ </div>
+</body>
+</html>
