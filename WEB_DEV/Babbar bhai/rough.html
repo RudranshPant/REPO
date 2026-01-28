@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!--notice display:flex; is for parent so that it becomes a flex-container but flex properties applied in flex items or the children usually-->
+    <style>
+      .box{
+        background-color: blue;
+        box-sizing: border-box;
+        height: 300px;
+        width: 300px;
+        
+        flex-direction: row;
+        flex-basis: 500px;
+        flex-grow: 2;
+        
+        
+      }
+    
+      .box_papa{
+        background-color: blueviolet;
+        box-sizing: border-box;
+        height: 1000px;
+        width: 1000px;
+        display: flex;
+        flex-flow: column;/*column wise extend*/
+
+      }
+      
+
+    </style>
+</head>
+<body>
+<ol>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+<section>Hello world</section>
+    <section style="background-color: blue;">Hello world</section>
+    <nav class="menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<div class="box_papa"> Papa Box
+     <div class="box" id="box1">Beta Box</div>
+</div>
+</body>
+</html>

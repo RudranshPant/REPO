@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation ki batein</title>
+    <style>
+        *{
+            padding: 0px;
+        
+        }
+        .container{
+              background-color: yellow;
+              box-sizing: border-box;
+              height: 100vh;
+              width: 100vw;
+              border: 3px solid black;/*notice without solid border not visible*/
+              /*overflow: hidden;*/ /*box bahar jaa raha tha container se */
+            
+
+        }
+        .Box{
+            position: relative;
+            background-color: blue;
+            box-sizing: border-box;
+            border-radius: 20px;
+            height: 80px;
+            width: 400px;
+            border: 3px solid black;
+            animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+            animation-delay: 3s;
+            margin: 10px;
+            box-shadow: black 20px 20px;
+            
+
+ 
+        }
+         @keyframes rightmovement{
+            from{top: 0;left: 0;}
+            to{top: 0;left: 800px;}
+            
+         }       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Box" id="Box1"></div>
+    </div>
+    
+</body>
+</html>

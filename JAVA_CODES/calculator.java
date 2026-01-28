@@ -3,7 +3,7 @@ public class calculator {
 //This is a code for CALCULATOR
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
-       int RESULT=0;
+       int RESULT=0; 
        System.out.print("\tCALCULATOR\t\n");
        System.out.println("Enter first number: ");
        int no1=sc.nextInt();
@@ -13,9 +13,9 @@ public class calculator {
       
     
     System.out.println("Enter 1 for +");
-    System.out.println("Enter 2 for +");
-    System.out.println("Enter 3 for +");
-    System.out.println("Enter 4 for +");
+    System.out.println("Enter 2 for -");
+    System.out.println("Enter 3 for *");
+    System.out.println("Enter 4 for /");
     int choice=sc.nextInt();
 
          switch (choice) {
@@ -37,7 +37,7 @@ public class calculator {
                 break;
          }
          System.out.println("The result is "+ RESULT);
-         //notice the use of concatenation operator without this we cant join a string and a variable.
+         //notice the use of concatenation operator without this we can't join a string and a variable.
          System.out.println(".......THANK YOU FOR USING.......");
          sc.close();
 }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leetcode Metrics App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="user-container">
+            <p>Enter your username below</p>
+            <div class="user-input-conatiner">
+                <input type="text" placeholder="Enter your username here" id="user-input">
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="progress">
+                <div class="progress-item">
+                    <div class="easy-progress">
+                        <span id="easy-label"></span>
+                        <p>Easy</p>
+                    </div>
+                </div>
+                <div class="progress">
+                <div class="progress-item">
+                    <div class="medium-progress">
+                        <span id="medium-label"></span>
+                    </div>
+                    <p>Medium</p>
+                </div>
+                <div class="progress">
+                <div class="progress-item">
+                    <div class="hard-progress">
+                        <span id="hard-label"></span>
+                    </div>
+                    <p>Hard</p>
+                </div>
+
+            </div>
+
+            <div class="stats-card"></div><!--directly populate card here from JS-->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
